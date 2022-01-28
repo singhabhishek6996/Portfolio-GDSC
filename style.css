@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navcontainer {
+  position: fixed;
+  top: 0;
+  background: linear-gradient(60deg, grey 0%, black 100%);
+  /* background-color: black; */
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-start;
+  height: 10vh;
+  width: 100vw;
+}
+
+.homecontainer {
+  /* background-color: yellow; */
+  height: 100vh;
+  width: 100vw;
+}
+
+#home {
+  background: linear-gradient(140deg, #ffeec4 0%, #fbd6e8 100%);
+}
+
+.navcontainer nav ul {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navcontainer nav {
+  padding: 22px 10px 22px 10px;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+}
+
+.stroke ul li {
+  padding: 10px 10px 10px 10px;
+  margin: 0 20px 0 20px;
+  font-size: 25px;
+}
+
+.navcontainer nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+nav ul li.active {
+  /* background-color:  #3D0000; */
+  background: linear-gradient(60deg, #291f42 0%, #06050b 100%);
+  border-radius: 0px;
+  transition: 0.3s;
+}
+
+nav .container ul li.active a {
+  color: #ffffff;
+}
+
+.name a {
+  margin-left: 650px;
+  text-shadow: 2px 2px 7px red;
+}
+
+.infocontainer {
+  /* background-color: green; */
+  width: 90vw;
+  height: 65vh;
+  margin: 0px auto;
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.picture img {
+  width: 280px;
+  height: 380px;
+  padding: 120px 60px 0 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Montserrat', serif;
+}
+
+.hi {
+  font-size: 75px;
+  font-family: 'Merriweather', serif;
+}
+
+.work {
+  font-size: 65px;
+  font-family: 'Merriweather', serif;
+}
+
+.about {
+  font-size: 25px;
+  padding-right: 70px;
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 35px;
+}
+
+.buttons button {
+  color: white;
+  background-color: #fde3d5;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 50px 0 50px;
+  cursor: pointer;
+  border-radius: 0px;
+  font-family: Georgia;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 3px;
+  text-decoration: none;
+}
+
+.buttons button a {
+  text-decoration: none;
+  color: #A9A9A9;
+  font-family: 'Montserrat', serif;
+  font-weight: bolder;
+}
+
+.buttons button:hover {
+  background: black;
+  text-decoration: none;
+}
+
+#myhobbies {
+  background: linear-gradient(140deg, #daccff 0%, #66bfb5 100%);
+}
+
+.hobbiescontainer {
+  /* background-color: yellow; */
+  margin: 0;
+  padding-top: 120px;
+  height: 88vh;
+  width: 100vw;
+}
+
+.hobbiescontainer h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Merriweather', serif;
+}
+
+.hobbies {
+  /* background-color: green; */
+  width: 90vw;
+  margin: 120px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 220px;
+  height: 220px;
+  padding: 0 40px 0 40px;
+}
+
+.hobbies ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hobbies ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 39px;
+  font-family: 'Montserrat', serif;
+}
+
+.hobbies ul li p {
+  font-family: 'Montserrat', serif;
+  padding-top: 29px;
+}
+
+.skills {
+  list-style: none;
+  width: 500px;
+  padding: 20px;
+  padding-right: 40px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.0), 0 10px 10px rgba(0, 0, 0, 0);
+  /* background-color: black; */
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  border-right: none;
+  color: white;
+}
+
+#skill {
+  background: linear-gradient(110deg, #daccff 0%, #9dc5d7 100%);
+}
+
+.skillscontainer {
+  /* background-color: yellow; */
+  height: 100vh;
+  width: 100vw;
+  padding-top: 120px;
+  margin-top: 0;
+}
+
+.skillscontainer h1 {
+  text-align: center;
+  font-size: 70px;
+  padding-bottom: 40px;
+  font-family: 'Merriweather', serif;
+}
+
+.skillscontainer li {
+  margin: 20px 0;
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+.skillbar {
+  background: #353b48;
+  display: block;
+  height: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 12px rgba(0, 0, 0, 0.24);
+  transition: all 2.5s cubic-bzier(0.25, 8, 0.25, 1);
+}
+
+.skillbar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.20);
+}
+
+.skillbar span {
+  height: 5px;
+  float: left;
+  background: linear-gradient(60deg, #000080 0%, #0ABAB5 100%);
+}
+
+.skillhtml {
+  width: 85%;
+  animation: skillhtml 2.5s;
+}
+
+.skillcss {
+  width: 80%;
+  animation: skillcss 2.5s;
+}
+
+.skilljs {
+  width: 40%;
+  animation: skilljs 2.5s;
+}
+
+.skillc {
+  width: 90%;
+  animation: skillc 2.5s;
+}
+
+.skillds {
+  width: 60%;
+  animation: skillds 2.5s;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills2 {
+  list-style: none;
+  width: 500px;
+  padding: 20px;
+  padding-left: 40px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.0), 0 10px 10px rgba(0, 0, 0, 0);
+  /* background-color: black; */
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  border-left: none;
+  color: white;
+}
+
+.skillbar2 {
+  background: #353b48;
+  display: block;
+  height: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 12px rgba(0, 0, 0, 0.24);
+  transition: all 2.5s cubic-bzier(0.25, 8, 0.25, 1);
+}
+
+.skillbar2:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.20);
+}
+
+.skillbar2 span {
+  height: 5px;
+  float: left;
+  background: linear-gradient(60deg, #ec008c 0%, #fc6767 100%);
+}
+
+.skillleadership {
+  width: 65%;
+  animation: skillleadership 2.5s;
+}
+
+.skilltm {
+  width: 70%;
+  animation: skilltm 2.5s;
+}
+
+.skillps {
+  width: 75%;
+  animation: skillps 2.5s;
+}
+
+.skillcom {
+  width: 58%;
+  animation: skillcom 2.5s;
+}
+
+.skillcreativity {
+  width: 82%;
+  animation: skillcreativity 2.5s;
+}
+
+.site-footer {
+  background: linear-gradient(60deg, grey 0%, black 100%);
+  margin: 0;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#social-wrapper {
+  text-align: center;
+}
+
+.social-wrapper ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.instagram-icon,
+.linkedin-icon,
+.github-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  margin: auto 20px;
+}
+
+@keyframes skillhtml {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes skillcss {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes skilljs {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes skillc {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes skillds {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes skillleadership {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes skilltm {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes skillps {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes skillcom {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 58%;
+  }
+}
+
+@keyframes skillcreativity {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 82%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .picture img {
+    display: none;
+  }
+}
