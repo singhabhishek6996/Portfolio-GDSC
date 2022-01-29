@@ -17,3 +17,13 @@ window.onscroll = () => {
     }
   });
 };
+
+var burger = document.querySelector('.burger')
+var navcontainer = document.querySelector('.navcontainer')
+var navright = document.querySelector('.navright')
+var navleft = document.querySelector('.navleft')
+  burger.addEventListener('click', () => {
+  navright.classList.toggle('v-class')
+  navleft.classList.toggle('v-class')
+  navcontainer.classList.toggle('navheight')
+})
