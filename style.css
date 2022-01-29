@@ -15,8 +15,7 @@ html {
   background: linear-gradient(60deg, grey 0%, black 100%);
   /* background-color: black; */
   /* background-color: yellow; */
-  display: flex;
-  justify-content: flex-start;
+  display: inline;
   height: 10vh;
   width: 100vw;
 }
@@ -46,8 +45,22 @@ html {
   width: 200px;
   height: 40px;
 }
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* .navleft{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.navright{
 
-.stroke ul li {
+  justify-content: flex-end;
+} */
+
+.navbar ul li {
   padding: 10px 10px 10px 10px;
   margin: 0 20px 0 20px;
   font-size: 25px;
@@ -61,8 +74,7 @@ html {
 }
 
 nav ul li.active {
-  /* background-color:  #3D0000; */
-  background: linear-gradient(60deg, #291f42 0%, #06050b 100%);
+  background-color:  #959BB8;
   border-radius: 0px;
   transition: 0.3s;
 }
@@ -71,10 +83,10 @@ nav .container ul li.active a {
   color: #ffffff;
 }
 
-.name a {
+/* .name a {
   margin-left: 650px;
   text-shadow: 2px 2px 7px red;
-}
+} */
 
 .infocontainer {
   /* background-color: green; */
@@ -153,7 +165,7 @@ nav .container ul li.active a {
   /* background-color: yellow; */
   margin: 0;
   padding-top: 120px;
-  height: 88vh;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -165,8 +177,9 @@ nav .container ul li.active a {
 
 .hobbies {
   /* background-color: green; */
+  height: 100vh;
   width: 90vw;
-  margin: 120px auto;
+  margin: 120px 20px 120px 30px;
   display: flex;
   justify-content: center;
 }
@@ -174,7 +187,7 @@ nav .container ul li.active a {
 .icon {
   width: 220px;
   height: 220px;
-  padding: 0 40px 0 40px;
+  padding: 0 25px 0 25px;
 }
 
 .hobbies ul {
@@ -349,7 +362,7 @@ nav .container ul li.active a {
 }
 
 .site-footer {
-  background: linear-gradient(60deg, grey 0%, black 100%);
+  background: linear-gradient(60deg, black 0%, grey 100%);
   margin: 0;
   padding: 20px 20px;
   display: flex;
@@ -473,9 +486,83 @@ nav .container ul li.active a {
     width: 82%;
   }
 }
-
-@media (max-width: 1250px) {
-  .picture img {
-    display: none;
+.burger{
+position: absolute;
+cursor: pointer;
+right: 3%;
+top: 12px;
+display: none;
+}
+.line{
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 6px;
+}
+@media (max-width: 1000px) {
+  .navbar{
+    flex-direction: column;
   }
+  .navcontainer{
+    height: 300px;
+    transition: all 0.5s ease-out;
+  }
+  .navleft ul, .navright ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  .burger{
+    display: block;
+  }
+  .navheight{
+    height: 68px;
+  }
+  .v-class{
+    opacity: 0;
+  }
+  .infocontainer{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .text{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .picture{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+  }
+  .hobbies ul{
+    display: block;
+  }
+  .hobbies ul li{
+    padding-bottom: 65px;
+  }
+  .container2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .skills{
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    border-bottom: none;
+}
+   .skills2{
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    border-top: none;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+  .skillscontainer li {
+    padding: 38px;
+}
 }
